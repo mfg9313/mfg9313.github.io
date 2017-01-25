@@ -1,0 +1,217 @@
+<!DOCTYPE HTML>
+
+	<html>
+	
+	
+		<head>
+		
+			<meta charset = "UTF-8">
+			<title>PBCS Home MockUp</title>
+			
+			<style type = "text/css" >
+			
+				body{
+				background-color : #E5E4E2;
+				}
+			
+				#htable{
+				margin-left : 12%;
+				margin-top : 3%;
+				padding-bottom : 1%;
+				}
+
+				#btable{
+				margin-left : 15%;
+				}
+		
+				#heading{
+				background-color : #2f2e3c;
+				}	
+			
+				#logo{
+				text-align : left;
+				}
+				
+				#b{
+				text-align : left;
+				} 
+				
+				#parTitles{
+				text-align : left;
+				}
+				
+				#par{
+				font-style : Arial, Times, serif;
+				font-size : 90%;
+				}
+						
+				#welcome{
+				font-size : 200%;
+				font-family : Arial, Helvetica, Verdana, Sans-serif; 
+				}
+				
+				#img{
+				text-align : left;
+				}
+					
+				.bottomSpacing{
+				padding-bottom : 6%; 
+				}
+				
+				#foot{
+				border-top : 1px solid black;
+				font-size : 80%; 
+				padding-top : 2%;
+				}
+		
+		
+				#links{
+				background-color : #2f2e3c;
+				color : white;
+				text-decoration: underline;
+				float : left;
+				margin-left : 15%;
+				text-align : center;
+				}	
+				.l{
+				padding-right : 35%;
+				}
+				a:link {
+				color : white;
+				text-decoration: underline;
+				}
+				a:visited {
+				color : gray;
+				}
+				a:hover{
+				color : #66FF00;
+				}
+				a:active{
+				color : #E6E6FA;
+				}
+				
+				
+				#now{
+				color : lightblue;
+				}
+		
+		
+				#button:active{
+					-moz-box-shadow: 0 0 10px #777777;
+					-webkit-box-shadow: 0 0 10px #777777;
+					box-shadow: 0 0 10px #777777;
+				}
+			
+			</style>		
+					
+		</head>
+		
+		
+		<body>
+				
+				<!--Top Table (Header & Links)-->
+				<table bgcolor = "#2f2e3c" id = htable width ="900px">
+				
+				
+						<!--Heading Section: Logo & Button -->
+						<tr id = heading>
+							<th id = logo width = "200px">
+								<img src="img/logo.png"/></th>
+							<th width = "500px"></th>
+							<th id = b width = "200px">
+								<a href = "forms.html" id = "button">
+									<img src="img/button.png"/></a>
+							</th></tr>
+				
+					
+						<!--Links Section: Links to: 
+							Home,Courses,Instruction,Mission,News,Pages,Features,Blog -->
+						<tr id = links>
+							<th id = home style = "padding-right : 40px">
+								<a href = "tables.html">Home</a></th>
+							<th id = courses style = "padding-right : 40px">
+								<a href = "#courses">Courses</a></th>
+							<th id = instructors style = "padding-right : 40px">
+								<a href = "#instructors">Instructors</a></th>
+							<th id = missions style = "padding-right : 45px">
+								<a href = "#missions">Mission</a></th>
+							<th id = news style = "padding-right : 55px">
+								<a href = "#news">News</a></th>
+							<th id = pages style = "padding-right : 55px">
+								<a href = "#pages">Pages</a></th>
+							<th id = features style = "padding-right : 55px">
+								<a href = "#features">Features</a></th>
+							<th id = blog>
+								<a href = "#blog">Blog</a></th></tr>
+			
+				</table>
+				
+				
+				<!--Bottom Table (Welcome, Text, Images, & Paragraphs)-->
+				<table id = btable width ="800px">
+				
+						
+						<!--Welcome Section -->
+						<tr><th colspan = "2"> </th>
+							<th id = welcome colspan = "2">WELCOME</th>
+							<th colspan = "4"> </th></tr>
+						
+						
+						<!--Line Image Section -->
+						<tr><th colspan = "2"> </th>
+							<th colspan = "2">
+								<img src="img/bar.png"/></th></tr>
+					
+					
+						<!--Images Section -->
+						<tr id = img><th colspan = "3">
+							<img src="img/programs.png" width = "190px"/></th>
+							<th colspan = "1" style = "padding-right : 55px">
+								<img src="img/instruction.png" width = "190px"/></th>
+							<th colspan = "3" >
+								<img src="img/statistics.png" width = "190px"/></th></tr>
+					
+					
+						<!--Paragraph Titles Section -->
+						<tr id = parTitles>
+							<th colspan = "2"><br />Programs</th>
+							<th colspan = "2"><br />Instruction</th>
+							<th colspan = "4"><br />Statistics</th></tr>
+						
+						
+						<!--Paragraphs Section -->
+						<tr id = par>
+							<td colspan = "2"><br />
+							At the Palm Beach Code School, The Web Developer Program is 
+								designed to prepare graduates for entry level work as 
+									junior web development in the tech industry.</td>
+							
+							<td colspan = "2"><br />
+							Welcome to The Palm Beach Code School. Here you will find  
+								hands-on instruction at an affordable tuition. Start Your 
+									<i ><a id = now href ="forms.html">Career Path Now!</a><i></td>
+							
+							<td colspan = "4" style = "padding-right : 30px"><br />
+							According to the US Department of Labor, the demand for Web   
+								Developers is projected to grow 20% over the next eight  
+									years. By learning to code, you will be preparing 
+										yourself for work in this growing industry.</td>
+						</tr>
+						
+			
+						<!--Spacing Section -->
+						<tr><td class = bottomSpacing colspan = "8"></td></tr>
+							
+						
+						<!--Footer Section: Copyright info -->
+						<tfoot>
+							<tr><td id = foot colspan = "8">Copyright &copy; 
+								Mock of The Palm Beach Code School 2015</td></tr>
+						</tfoot>
+						
+
+				</table>
+	
+		</body>		
+		
+	</html>

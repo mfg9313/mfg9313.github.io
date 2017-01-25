@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>The Landon Hotel</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+		<div id="container">
+			
+			<div id="logoSpot">
+				<a href="TheLandonHotel.html"><img id="logoPic" src="../TheLandonHotel/images/header.png"></a>
+			</div>
+
+			<div id="hero">
+            	<div class="current"><img id="mainPic" src="../TheLandonHotel/images/headers/Paris.jpg"></div>
+	            <div><img id="mainPic" src="../TheLandonHotel/images/headers/Paris-2.jpg"></div>
+	            <div><img id="mainPic" src="../TheLandonHotel/images/headers/Hong-Kong.jpg"></div>
+	            <div><img id="mainPic" src="../TheLandonHotel/images/headers/Hong-Kong-2.jpg"></div>
+	            <div><img id="mainPic" src="../TheLandonHotel/images/headers/London.jpg"></div>
+	            <div><img id="mainPic" src="../TheLandonHotel/images/headers/London-2.jpg"></div>
+	            <div><img id="mainPic" src="../TheLandonHotel/images/headers/San-Francisco.jpg"></div>
+        	</div>
+
+			<nav>
+				<ul>
+					<a href="TheLandonHotel.html"><li>HOME</li></a>
+					<a href="TheLandonHotel_RS.html"><li>ROOM SERVICE</li></a>
+					<a href="TheLandonHotel_S.html"><li>SPECIALS</li></a>
+					<a href="TheLandonHotel_R.html"><li>RESERVATIONS</li></a>
+					<a href="TheLandonHotel_ME.html"><li>MEETINGS EVENTS</li></a>
+					<a href="TheLandonHotel_News.html"><li>NEWS</li></a>
+					<a href="TheLandonHotel_Contact.html"><li>CONTACTS</li></a>
+				</ul>
+			</nav>
+
+			<div id="body">
+				<h1>Reservations</h1>
+				<div>
+					<h2>Tell us when you'll be here!</h2>
+					<p>Let us know when you plan to visit!</p>
+				</div>
+				<div>
+					<form id="reservation_form" action="#" method="POST" onsubmit="return validateForm();" enctype="multipart/form-data">
+						<div class="row">
+							<label class="required" for="name">First Name*</label>
+							<input id="fname" class="input" name="fname" type="text" value="" size="30" /><br />
+							<span id="name_validation" class="error"></span>
+						</div>
+						<div class="row">
+							<label class="required" for="name">Last Name*</label>
+							<input id="lname" class="input" name="lname" type="text" value="" size="30" /><br />
+							<span id="name_validation" class="error"></span>
+						</div>
+						<div class="row">
+							<label class="required email" for="email">Email*</label>
+							<input id="email" class="input" name="email" type="text" value="" size="30" /><br />
+							<span id="email_validation" class="error"></span>
+						</div>
+						<div class="row">
+							<label class="required" for="message">Details of your visit</label><br />
+							<textarea id="comments" class="input" name="message" rows="7" cols="30"></textarea><br />
+							<span id="message_validation" class="error"></span>
+						</div>
+						<div class="row">
+						<input id="submit_button" type="submit" value="Send email" />
+						</div>
+					</form>
+				</div>
+			</div>	
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<script type="text/javascript" src="code.js"></script>
+	</body>
+</html>

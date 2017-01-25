@@ -1,0 +1,297 @@
+
+				html{
+						
+						background-color : #7C7A8F;
+				}
+				
+				body{
+				
+						width : 900px;
+						margin: auto;
+						background-color : white;
+				}
+			
+			
+				/*Top Main Desolve Logo & Txt*/
+				#logo{
+						
+						background-color : #646266;
+						padding-bottom : 10px;
+						color : white;
+				
+				}
+				#logo b{
+				
+						font-family: mainLogo;
+						letter-spacing : -4px;
+						font-size : 40px;
+						margin-top : 40px;
+						padding-left : 10px;
+						position : absolute;
+				}
+				#logo span{
+				
+						font-family : mainPhrase;
+						padding-left : 215px;
+						padding-top : 60px;
+						position : absolute;
+				}
+				#logo img{
+				
+						margin-left : 50px;
+						padding-top : 20px;
+				}
+				#logo b, #logo span{
+				
+						color : white;
+				}
+				
+				
+				/*Top Navigation Bar & Images*/
+				nav a{
+							
+						font-family: titleFont;
+						text-decoration : none; 
+						float : left;
+						padding-right : 60px;
+						text-align : center;
+						color : black;
+				}
+				nav a:nth-child(1){
+							
+						margin-top : 3px;
+						padding-left : 50px;
+				}
+				nav a:nth-child(2) p{
+							
+						padding-right : 40px;
+						border-right : 1px dotted white;
+				}
+				nav a:nth-child(3) p{
+							
+						margin-left : -35px;
+						border-right : 1px dotted white;
+				}
+				nav a:hover p,a:hover i{
+						
+						color : orange;
+				}
+				nav a p{
+						
+						font-size : 90%;
+						margin-top : -25px;
+				}
+				nav i{
+						
+						font-size : 70%;
+						color : black;
+				}
+				nav a:nth-child(1) img{
+				
+						margin-left : -140%;
+				}
+				nav a:nth-child(2) img{
+				
+						margin-left : -90%;
+				}
+				nav a:nth-child(4) img{
+				
+						margin-left : -130%;
+				}
+				nav img{
+				
+						margin-top : 10px;
+						margin-left : -115%;
+				}
+				
+				
+	
+	
+			/*Aside; Side Link Table & Contest*/
+				aside{
+				
+						clear : right; 
+						float : right;
+						width : 190px;
+						height : 875px;
+						padding-top : 10px;
+						padding-right : 35px;
+				}
+				aside a{
+						
+						color : black;
+						padding-left : 10px;
+						text-decoration : none; 
+				}
+				aside p{
+						
+						text-align : left;
+						font-size : 70%;
+						font-family : mainFont;
+				}
+				aside h5{
+				
+						font-weight : normal;
+						text-align : center;
+				}
+				aside th{
+				
+						font-weight : normal;
+						font-size : 90%;
+						padding-bottom : 15px;
+				}
+				aside td:hover{
+				
+						opacity: 0.8;
+				}
+				aside td{
+						
+						font-family : titleFont;
+						font-size : 70%;
+						padding-right : 80px;
+				}
+				aside tr:nth-child(odd) td{
+						
+						background-color : #EEE5D7;
+				}
+				aside tr:nth-child(even) td{
+				
+						background-color : #D9D6BD;
+				}
+				aside div{
+						text-align : center;
+				}
+				aside #current{
+						padding-top : 10px;
+				}
+				
+				
+				
+				/*Main Section; Gallery & Info*/
+				#mainDiv{
+				
+						margin-top : 110px;
+						width : 585px;
+						height : 850px;
+						padding-left : 45px;
+				}
+				#mainDiv img{
+				
+						margin-top : -40px;
+				}
+				#titlePar{
+				
+						margin-bottom : -10px;
+						border : 0px solid black;
+				}
+				#titlePar h1{
+				
+						font-family : titleFont;
+						font-weight : normal;
+						font-size : 120%;
+						border : 0px solid black;
+				}
+				#titlePar img{
+				
+						top : -20px;
+						position : relative;
+						float : right;
+				}
+				#fPar{
+				
+						border-top : 2px solid black;
+				}
+				#sPar,#tPar{
+				
+						border-bottom : 2px solid black;
+				}	
+		
+				#tPar span,#sPar span,#fPar span{
+				
+						font-family : titleFont;
+						font-size : 90%;
+						margin-top : -42px;
+						float : right;
+						position : relative;
+				}
+				#tPar p, #sPar p{
+						
+						font-family : titleFont;
+						font-size : 90%;
+				}
+				#tPar h2,#sPar h2,#fPar h2{
+				
+						font-family : picTitles;
+						font-weight : normal;
+						font-size : 180%;
+				}
+				
+				
+				
+				/*Bottom of Page; Twitter Link, Search Bar*/
+				footer{
+						
+						clear : both;
+						font-size : 90%;
+						background-color : #AEA982;
+				}
+				
+				footer a{
+						
+						color : black;
+						text-decoration : none; 
+				}
+				
+				#look{
+				
+						font-family : titleFont;
+						padding-top : 40px;
+						padding-left : 50px;
+				}
+				
+				#bottomRight{
+						
+						margin-top : -9%;
+						padding-left : 700px;
+						padding-bottom : 5px;
+				}
+				#bottomRight span{
+						
+						padding-top : 40px;
+						position : absolute;
+				}
+				#bottomRight p{
+						
+						margin-top : 2%;
+				}
+				
+				
+				
+				/*Diffrent Imported Font Fases*/
+				@font-face {
+    				font-family: mainLogo;
+    				src: url(fonts/Cantarell-Bold-webfont.woff);
+    		}
+				@font-face {
+				
+						font-family: mainPhrase;
+						src: url(fonts/Cantarell-BoldOblique-webfont.woff);
+				}
+				@font-face {
+				
+						font-family: titleFont;
+						src: url(fonts/Cantarell-Regular-webfont.woff);
+				}
+				@font-face {
+				
+						font-family: mainFont;
+						src: url(fonts/Cardo99s-webfont.woff);
+				}
+				@font-face {
+				
+						font-family: picTitles;
+						src: url(fonts/ostrich-bold-webfont.woff);
+				}
+				
+				
+	

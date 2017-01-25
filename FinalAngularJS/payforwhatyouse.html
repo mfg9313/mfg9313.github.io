@@ -1,0 +1,223 @@
+<html ng-app="paymentApp">
+	<head>
+
+		<!--  JQuery Ajax -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+		<!-- Angular JS -->
+		 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous">
+		</script>
+		
+		<style type="text/css">
+			body{
+				background-color: #92407E;
+			}
+			h1{
+				color: white;
+				text-align: center;
+				font-size: 220%;
+				padding-top: 4%;
+				text-transform: uppercase;
+				font-family: 'Arial Black';
+			}
+			b{
+				font-family: 'Arial Black';
+				text-transform: uppercase;
+				margin-left: 31%;
+			}
+			table{
+				border-collapse: collapse;
+				margin-left: 31%;
+				width: 40%;
+				color: #CD84BB;
+			}
+			th, td {
+			    border-bottom: 1px solid #7A2F68;
+			    padding: 8px 0px 8px 0px;
+			}
+			th{
+				font-size: 60%;
+				text-align: left;
+			}
+			td{
+				padding-right: 40px; 
+			}
+			a{
+				color: white;
+				font-size: 70%;
+				font-family: 'Arial';
+			}
+			button{
+				background-color: #01ACC6;
+				font-family: 'Arial';
+				padding: 15px 45px 15px 45px;
+    			text-align: center;
+    			text-decoration: none;
+    			font-size: 90%;
+    			margin-left: 38%;
+  				margin-top: 2%;
+				border: none;
+    			color: white;
+			}
+			tr:hover{
+				background-color: #763366;
+				color: white;
+			}
+			.title{
+				opacity: .4;
+			}
+			.firstPar{
+				color: white;
+				opacity: .8;
+				margin-left: 31%;
+				margin-right: 30%;
+				font-size: 80%;
+				font-family: 'Arial';
+			}
+			.right{
+				margin-left: 13%;
+			}
+			.priceL{
+				color: white;
+				margin-left: 35%;
+				margin-top: .5%;
+				font-size: 130%;
+				text-transform: uppercase;
+				font-family: 'Impact';
+			}
+			.priceR{
+				color: white;
+				margin-left: 60%;
+				margin-top: -3.6%;
+				font-size: 130%;
+				text-transform: uppercase;
+				font-family: 'Impact';
+			}
+			.priceRS{
+				color: white;
+				margin-left: 65%;
+				margin-top: -3.8%;
+				font-size: 100%;
+				text-transform: uppercase;
+				font-family: 'Impact';
+			}
+			.email{
+				opacity: .4;
+				color: white;
+				font-size: 70%;
+				margin-left: 31%;
+				font-family: 'Arial';
+			}
+			#star {
+				margin-left: 56%;
+				margin-top: -5%;
+			    background: #FEDD12;
+			    width: 45px;
+			    height: 45px;
+			    position: relative;
+			    text-align: center;
+			   
+			}
+			#star:before, #star:after {
+			    content: "";
+			    position: absolute;
+			    top: 0;
+			    left: 0;
+			    height: 45px;
+			    width: 45px;
+			    background: #FEDD12;
+			   
+			}
+			#star:before {
+			    -webkit-transform: rotate(30deg);
+			    -moz-transform: rotate(30deg);
+			    -ms-transform: rotate(30deg);
+			    -o-transform: rotate(30deg);
+			}
+			#star:after {
+			    -webkit-transform: rotate(60deg);
+			    -moz-transform: rotate(60deg);
+			    -ms-transform: rotate(60deg);
+			    -o-transform: rotate(60deg);
+			}
+			#star p{
+				transform: rotate(20deg);
+				text-transform: uppercase;
+				position: absolute;
+				margin-top: 1%;
+				font-size: 50%;
+				z-index: 1;
+			}
+		</style>
+	</head>
+	<body ng-controller="TableCtrl">
+
+		<div class="heading">
+			<h1><span class="title">Pay For</span> What You Use.</h1>
+			<p class="firstPar">Pricing starts at $20 per month for the first million request, with automatic discounts for high-volume customers. Plus, new account are free for 30 days, so you can try Skylight risk-free before you pay a dime.</p>
+		</div>
+
+		<div class="pricing">
+			<b class="left">Monthly Requests</b>
+			<b class="right">Monthly Cost</b>
+			<p class="priceL">Million</p>
+			<p class="priceR" >$</p><p class="priceRS">.00</p>
+		</div>
+
+		<div class="table" >
+			<table>
+			  <tr>
+			    <th ng-repeat="stuff in content">{{stuff.title}}</th>
+			  </tr>
+			  <tr>
+			    <td ng-repeat="stuff in content">{{stuff.f}}</td>
+			  </tr>
+			  <tr>
+			    <td ng-repeat="stuff in content">{{stuff.s}}</td>	
+			  </tr>
+			  <tr>
+			    <td ng-repeat="stuff in content">{{stuff.m}}</td>	
+			  </tr>
+			  <tr>
+			    <td ng-repeat="stuff in content">{{stuff.L}}</td>	
+			  </tr>
+			  <tr>
+			    <td ng-repeat="stuff in content">{{stuff.XL}}</td>	
+			  </tr>
+			  <tr>
+			    <td ng-repeat="stuff in content">{{stuff.XXL}}</td>	
+			  </tr>
+			</table>
+		</div>
+
+		<div class="footer">
+			<p class="email"><a href="#">Email us</a> for information about volume pricing.</p>
+			<button>Start A Free 30-Day Trial</button>
+			<div id="star">
+				<p>No<br /> Credit Card Required</p>
+			</div>
+		</div>
+
+		<script type="text/javascript">
+
+			angular.module('paymentApp', [])
+
+			.controller('TableCtrl', function($scope){
+
+              $scope.content = [
+              {title: 'Tier',f:'Free',s:'S',m:'M',L:'L',XL:'XL',XXL:'2XL'},
+              {title: 'Monthly Requests',f:'100,000',s:'1 Million',m:'5 Million',L:'20 Million',XL:'50 Million',XXL:'100 Million'},
+              {title: 'Base Price',f:'Free',s:'$20',m:'$100',L:'$250',XL:'$370',XXL:'$470'},
+              {title: 'Additional Requests',f:'N/A',s:'$20/Million',m:'$10/Million',L:'$4/Million',XL:'$2/Million',XXL:'$1/Million'}
+              ];
+
+
+
+            })
+
+		</script>
+	</body>
+</html>
